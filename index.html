@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Template4</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div class="header-block">
             <img src="./img/logo_Oxit.png" alt="logo_Oxit" class="logo-img">
+            <div id="header-menu" class="header-menu">
+                <ul>
+                    <a href="#"><li>Головна</li></a>
+                    <a href="#course"><li>Програма курсу</li></a>
+                    <a href="#feedback"><li>Відгуки про курс</li></a>
+                    <a href="#video"><li>Відео</li></a>
+                    <a href="#mentors"><li>Ментори</li></a>
+                    <a href="#registration"><li>Подати заявку</li></a>
+                </ul>
+            </div>
             <div id="hamburger-menu" class="hamburger-menu">
                 <div class="hamburger-block">
                     <img src="./img/icons/hamburger_menu.png" alt="hamburger_menu" class="hamburger-img">
                 </div>
-            </div>
-            <div id="header-menu" class="header-menu">
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#course">Програма курсу</a></li>
-                    <li><a href="#feedback">Відгуки про курс</a></li>
-                    <li><a href="#video">Відео</a></li>
-                    <li><a href="#mentors">Ментори</a></li>
-                    <li><a href="#registration">Подати заявку</a></li>
-                </ul>
             </div>
         </div>
     </header>
@@ -37,23 +37,33 @@
                 <form action="#" class="registration-form">
                     <h3>Зареєструватися на курси</h3>
                     <div class="form-item">
-                        <label for="fname">Ім'я<img src="./img/icons/required.png" alt="required-photo" class="form-img"></label>
+                        <div class="label">
+                            <label for="fname">Ім'я</label><img src="./img/icons/required.png" alt="required-photo" class="form-img">
+                        </div>
                         <input type="text" name="fname" id="fname" placeholder="Ім'я" required>
                     </div>
                     <div class="form-item">
-                        <label for="sname">Прізвище<img src="./img/icons/required.png" alt="required-photo" class="form-img"></label>
+                        <div class="label">
+                            <label for="sname">Прізвище</label><img src="./img/icons/required.png" alt="required-photo" class="form-img">
+                        </div>
                         <input type="text" name="sname" id="sname" placeholder="Прізвище" required>
                     </div>
                     <div class="form-item">
-                        <label for="work">Мене більше цікавить<img src="./img/icons/required.png" alt="required-photo" class="form-img"></label>
+                        <div class="label">
+                            <label for="work">Мене більше цікавить</label><img src="./img/icons/required.png" alt="required-photo" class="form-img">
+                        </div>
                         <input type="text" name="work" id="work" placeholder="developer or QA" required>
                     </div>
                     <div class="form-item">
-                        <label for="phone">Номер телефону<img src="./img/icons/required.png" alt="required-photo" class="form-img"></label>
+                        <div class="label">
+                            <label for="phone">Номер телефону</label><img src="./img/icons/required.png" alt="required-photo" class="form-img">
+                        </div>
                         <input type="text" name="phone" id="phone" placeholder="Номер телефону: +38 XXX XX XX XXX" required>
                     </div>
                     <div class="form-item">
-                        <label for="email">Email<img src="./img/icons/required.png" alt="required-photo" class="form-img"></label>
+                        <div class="label">
+                            <label for="email">Email</label><img src="./img/icons/required.png" alt="required-photo" class="form-img">
+                        </div>
                         <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
                 </form>
@@ -61,53 +71,47 @@
                     <input type="checkbox" name="politics" id="politics">
                     <p>Я погоджуюся із <a href="#">Політикою Конфіденційності</a><img src="./img/icons/required.png" alt="required-photo" class="form-img"></p>
                 </div>
-                
                 <div class="btn">
                     <button id="btn">Зареєструватися зараз</button>
                 </div>
-            </div>            
+            </div>
         </div>
         <div id="course" class="course">
             <div class="course-flex">
-                <div class="course-title">
-                    <h2>Курс &laquo;Розробка сайтів&raquo;</h2>
-                </div>
-                <div class="course-block">
-                    <div class="course-items course-items1">
-                        <div class="course-item">
-                            <img src="./img/icons/course-icon-1.png" alt="course-icon-1" class="course-img">
-                            <div class="item-title">
-                                <h3>Розробка сайтів на WordPress</h3>
-                            </div>
-                            <p>Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.</p>
+                <h2>Курс &laquo;Розробка сайтів&raquo;</h2>
+            </div>
+        </div>
+        <div class="course-container">
+            <div class="course-block">
+                <div class="course-items">
+                    <div class="course-item">
+                        <img src="./img/icons/course-icon-1.png" alt="course-icon-1" class="course-img">
+                        <div class="item-title">
+                            <h3>Розробка сайтів на WordPress</h3>
                         </div>
-                    </div>
-                    <div class="course-items course-items2">
-                        <div class="course-item">
-                            <img src="./img/icons/course-icon-2.png" alt="course-icon-2" class="course-img">
-                            <div class="item-title">
-                                <h3>Розробка сайтів на Drupal 8</h3>
-                            </div>
-                            <p>Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).</p>
-                        </div>
-                    </div>
-                    <div class="course-items course-items3">
-                        <div class="course-item">
-                            <img src="./img/icons/course-icon-3.png" alt="course-icon-3" class="course-img">
-                            <div class="item-title">
-                                <h3>Ознайомлення з тестуванням</h3>
-                            </div>
-                            <p>Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкості тощо).</p>
-                        </div>
+                        <p>Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.</p>
                     </div>
                 </div>
-                <div class="course-circle-block">
-                    <!-- <div class="course-circle1"></div>
-                    <div class="course-circle2"></div>
-                    <div class="course-circle3"></div> -->
+                <div class="course-items">
+                    <div class="course-item">
+                        <img src="./img/icons/course-icon-2.png" alt="course-icon-2" class="course-img">
+                        <div class="item-title">
+                            <h3>Розробка сайтів на Drupal 8</h3>
+                        </div>
+                        <p>Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).</p>
+                    </div>
                 </div>
-            </div>            
-        </div>        
+                <div class="course-items">
+                    <div class="course-item">
+                        <img src="./img/icons/course-icon-3.png" alt="course-icon-3" class="course-img">
+                        <div class="item-title">
+                            <h3>Ознайомлення з тестуванням</h3>
+                        </div>
+                        <p>Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкості тощо).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="statistic">
             <div class="statistic-block">
                 <div class="statistic-item">
@@ -130,46 +134,43 @@
                     <p class="statistic-count">120</p>
                     <p>випускників курсів працевлаштовано</p>
                 </div>
-            </div>            
+            </div>
         </div>
         <div id="feedback" class="feedback">
             <div class="feedback-flex">
                 <h2>Що кажуть студенти наших курсів:</h2>
-                <div class="feedback-block">
-                    <div id="feedback-item1" class="feedback-item">
-                        <div class="feedback-quotes">
-                            <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
-                            <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
-                            <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
-                        </div>                        
-                        <p class="feedback-name">Коля</p>
-                        <p class="feedback-work">Drupal-девелопер</p>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <div class="feedback-block">
+                <div class="feedback-item">
+                    <div class="feedback-quotes">
+                        <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
+                        <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
+                        <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
                     </div>
-                    <div id="feedback-item2" class="feedback-item">
-                        <div class="feedback-quotes">
-                            <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
-                            <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
-                            <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
-                        </div>
-                        <p class="feedback-name">Кколя</p>
-                        <p class="feedback-work">Drupal-девелопер</p>
-                    </div>
-                    <div id="feedback-item3" class="feedback-item">
-                        <div class="feedback-quotes">
-                            <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
-                            <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
-                            <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
-                        </div>
-                        <p class="feedback-name">Ккколя</p>
-                        <p class="feedback-work">Drupal-девелопер</p>
-                    </div>
+                    <p class="feedback-name">Коля</p>
+                    <p class="feedback-work">Drupal-девелопер</p>
                 </div>
-                <div class="feedback-circle-block">
-                    <!-- <div id="feedback-circle1" class="feedback-circle1"></div>
-                    <div id="feedback-circle2" class="feedback-circle2"></div>
-                    <div id="feedback-circle3" class="feedback-circle3"></div> -->
+                <div class="feedback-item">
+                    <div class="feedback-quotes">
+                        <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
+                        <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
+                        <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
+                    </div>
+                    <p class="feedback-name">Кколя</p>
+                    <p class="feedback-work">Drupal-девелопер</p>
                 </div>
-            </div>            
+                <div class="feedback-item">
+                    <div class="feedback-quotes">
+                        <img src="./img/icons/quotes1.png" alt="quotes-img" class="quotes-img-start">
+                        <p class="feedback-text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою я хочу займатися. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site B>uilder. Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.</p>
+                        <img src="./img/icons/quotes2.png" alt="quotes-img" class="quotes-img-end">
+                    </div>
+                    <p class="feedback-name">Ккколя</p>
+                    <p class="feedback-work">Drupal-девелопер</p>
+                </div>
+            </div>
         </div>
         <div id="video" class="video">
             <div class="video-block">
@@ -178,49 +179,46 @@
                 <div class="video-item">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JLHvS0qR5Lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>            
+            </div>
         </div>
         <div id="mentors" class="mentors">
             <div class="mentors-flex">
                 <h2>Наші ментори</h2>
-                <div class="mentors-block">
-                    <div id="mentors-item1" class="mentors-item">
-                        <img src="./img/viktor.png" alt="victor-photo" class="mentors-img">
-                        <div class="mentors-text">
-                            <p class="mentors-name">Віктор</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
-                            <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
-                            <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
-                            <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
-                        </div>                        
-                    </div>
-                    <div id="mentors-item2" class="mentors-item">
-                        <img src="./img/mark.png" alt="mark-photo" class="mentors-img">
-                        <div class="mentors-text">
-                            <p class="mentors-name">Марк</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
-                            <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
-                            <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
-                            <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
-                        </div>
-                    </div>
-                    <div id="mentors-item3" class="mentors-item">
-                        <img src="./img/vova.png" alt="vova-photo" class="mentors-img">
-                        <div class="mentors-text">
-                            <p class="mentors-name">Вова</p>
-                            <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
-                            <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
-                            <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
-                            <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
-                        </div>
+            </div>
+        </div>
+        <div class="mentors-container">
+            <div class="mentors-block">
+                <div class="mentors-item">
+                    <img src="./img/viktor.png" alt="victor-photo" class="mentors-img">
+                    <div class="mentors-text">
+                        <p class="mentors-name">Віктор</p>
+                        <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                        <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
                     </div>
                 </div>
-                <div class="mentors-circle-block">
-                    <!-- <div id="mentors-circle1" class="mentors-circle1"></div>
-                    <div id="mentors-circle2" class="mentors-circle2"></div>
-                    <div id="mentors-circle3" class="mentors-circle3"></div> -->
+                <div class="mentors-item">
+                    <img src="./img/mark.png" alt="mark-photo" class="mentors-img">
+                    <div class="mentors-text">
+                        <p class="mentors-name">Марк</p>
+                        <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                        <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
+                    </div>
                 </div>
-            </div>                        
+                <div class="mentors-item">
+                    <img src="./img/vova.png" alt="vova-photo" class="mentors-img vova">
+                    <div class="mentors-text">
+                        <p class="mentors-name">Вова</p>
+                        <p>Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! Сам засновник і CEO компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                        <p>Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все - саморозвиток для нього не закінчується жодної хвилини.</p>
+                        <p>На книжкових полицях Віктора - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                        <p>Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.297575691093!2d25.31561941592155!3d50.7144182761901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35f529e9%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1suk!2sua!4v1609171178633!5m2!1suk!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -247,8 +245,8 @@
                     <p class="contacts-name">Facebook</p>
                     <a href="http://facebook.com/oxitschool" target="blank">facebook.com/oxitschool</a>
                 </div>
-            </div>            
-        </div>        
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-block">
